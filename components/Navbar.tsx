@@ -38,29 +38,7 @@ export default function Navbar() {
 
 
 
-                {/* Auth Buttons */}
-                <div className="tex-sm md:text-md flex items-center gap-4 p-4">
-                    {!user ? (
-                        <button
-                            onClick={loginWithGoogle}
-                            className="px-6 py-2 text-md rounded-full bg-white text-black font-semibold hover:bg-purple-200 transition-all duration-300 shadow-md"
-                        >
-                            Login
-                        </button>
-                    ) : (
-                        <Link
-                            href="/validate"
-                            className="group relative max-w-[240px] truncate px-6 py-2 text-md rounded-full border border-purple-500 text-purple-300 hover:bg-purple-500 hover:text-white transition-all duration-300 shadow-md"
-                        >
-                            {`Hello ${user?.user_metadata?.full_name?.trim()?.slice(0, 8)
-                                }` || 'Hello, User!'}
-                            <span className="invisible group-hover:visible absolute left-0 top-full mt-2 w-max max-w-xs bg-gray-900 text-white text-sm px-3 py-2 rounded-md shadow-lg z-50">
-                                Chat with AI with your business plan and real-time search
-                            </span>
-                        </Link>
-
-                    )}
-                </div>
+              
             </div >
 
 
