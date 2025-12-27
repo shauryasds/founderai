@@ -33,10 +33,10 @@ export default function IdeaInput() {
 
         // console.log("User:", user);
         // return;
-        if (!user) {
-            const allowed = trackGuestUsage();
-            if (!allowed) return;
-        }
+        // if (!user) {
+        //     const allowed = trackGuestUsage();
+        //     if (!allowed) return;
+        // }
 
 
         setIsDisabled(true);
